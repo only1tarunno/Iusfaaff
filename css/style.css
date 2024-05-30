@@ -37,6 +37,8 @@ body {
 
 #banner {
   background-image: url(../img/banner.jpg);
+  background-attachment: fixed;
+  background-color: black;
 }
 #mobileNav::before {
   background: none;
