@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Pretendard";
+  src: url("../fonts/Pretendard-Thin.woff") format("woff");
+  font-weight: 300; /* Thin */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("../fonts/Pretendard-Regular.woff") format("woff");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("../fonts/Pretendard-Medium.woff") format("woff");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("../fonts/Pretendard-SemiBold.woff") format("woff");
+  font-weight: 600; /* semi-bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("../fonts/Pretendard-Bold.woff") format("woff");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+body {
+  font-family: "Pretendard", sans-serif;
+}
+
+#banner {
+  background-image: url(../img/banner.jpg);
+}
+#mobileNav::before {
+  background: none;
+}
+.menu li > :not(ul, .menu-title, details, .btn).active,
+.menu li > :not(ul, .menu-title, details, .btn):active,
+.menu li > details > summary:active {
+  --tw-bg-opacity: 0;
+}
+.menuLink {
+  position: relative;
+}
+.menuLink::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background: #fff;
+  width: 0;
+  height: 1px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menuLink:hover::after {
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0px 0px 10px 2px #0000001a;
+}
+
+.collapse-title {
+  padding: 26px 35px;
+}
+.collapse-title {
+  transition: background-color 0.3s, color 0.3s;
+}
+.arrow-container {
+  transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+/* for mobile device  */
+@media (max-width: 576px) {
+  #banner {
+    background-image: url(../img/bannerphone.png);
+  }
+}
