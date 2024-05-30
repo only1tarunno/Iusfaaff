@@ -59,8 +59,19 @@ body {
   height: 1px;
   transition: all 0.5s ease-in-out;
 }
+.menuLink2::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  background: #000;
+  width: 0;
+  height: 1px;
+  transition: all 0.5s ease-in-out;
+}
 
-.menuLink:hover::after {
+.menuLink:hover::after,
+.menuLink2:hover::after {
   width: 100%;
 }
 
